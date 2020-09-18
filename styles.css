@@ -1,0 +1,117 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
+
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 30px;
+    margin: 2px;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 211, 129);
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+
+  .btn:hover {
+    border-color: black;
+    background-color: rgba(0, 183, 255, 0.808); 
+    font-size: larger;
+    
+  }
+
+  .btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+  }
+  
+  .btn.wrong {
+    --hue: var(--hue-wrong);
+  }
+
+  .submit{
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    width: 80px;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    outline: none;
+
+  }
+
+  
+  .submit:hover {
+    border-color: black;
+    font-size: larger;
+  }
+  
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  
+/* 
+  Listening 
+  1.		C
+  2.		B
+  3.		a  
+  4.		c  
+  5.		b  
+  6.		c  
+  7.		a
+  8.		✔  
+  9.		✘  
+  10.		✔  
+  11.		✘  
+  12.	  ✔
+  13.		✘  
+  14.		✘ 
+  15.		✔
+  16.		c  
+  17.		a  
+  18.		c 
+  19.		b
+  20.		a 
+  21.		b
+  22.		18/eighteen
+  23.		6/six  
+  24.		Lake
+  25.		roundabout 
+  26.		cloudy
+  27.		horse  
+  28.		bridge
+  29.		shoulder
+  30.		july */
+  
